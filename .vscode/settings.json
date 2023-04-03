@@ -1,0 +1,33 @@
+{
+    "cSpell.words": [
+        "alexedwards",
+        "dbname",
+        "dbrepo",
+        "dockertest",
+        "gohtml",
+        "infile",
+        "jackc",
+        "middlewares",
+        "nexthandler",
+        "outfile",
+        "pgxpool",
+        "Posgtres",
+        "rodrigues",
+        "sslmode",
+        "stdlib",
+        "testdata",
+        "userip"
+    ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "webapp-test-db",
+            "database": "users",
+            "username": "postgres",
+            "password": "postgres"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{{template "base" .}}
+
+{{define "content"}}
+    <main class="container">
+        <h1>User Profile</h1>
+        <hr>
+        {{if ne .User.ProfilePic.FileName ""}}
+        <img style="max-width: 300px;" src="/static/img/{{.User.ProfilePic.FileName}}" alt="profile">
+        {{else}}
+        <p>No profile image uploaded yet...</p>
+        {{end}}
+        <hr>
+        <form action="/user/upload-profile-picture" method="post" enctype="multipart/form-data">
+
+            <label for="formFile">Choose an image</label>
+            <input type="file" id="formFile" name="image" accept="image/gif,image/jpeg,image/png">
+
+            <input type="submit" value="Upload">
+
+        </form>
+
+    </main>
+{{end}}

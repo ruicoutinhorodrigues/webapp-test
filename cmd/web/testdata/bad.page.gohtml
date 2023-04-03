@@ -1,0 +1,26 @@
+{{template "base" .}}
+
+{{define "content"}}
+    <main class="container">
+        <h1>Home page</h1>
+        <hr>
+
+        <form action="/login" method="post">
+
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="Email address" required>
+            <small>We'll never share your email with anyone else.</small>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+          
+            <button type="submit">Submit</button>
+          
+        </form>
+
+        <hr>
+        <small>{{$nonExistentVar}}</small>
+
+
+    </main>
+{{end}}
